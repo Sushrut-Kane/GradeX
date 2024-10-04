@@ -9,6 +9,7 @@ button {
   background: none;
 }
 body {
+  
   overflow: hidden;
 }
 
@@ -225,4 +226,74 @@ input:not([type="radio"]):focus {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
+}
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+
+  .btn-container {
+    margin-bottom: 20px;
+  }
+
+  input:not([type="radio"]) {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .signup-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .checkbox-label {
+    width: 45%;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .see-icon, .unsee-icon {
+    top: 48px;
+    font-size: 18px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .main-container {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .input-element {
+    margin-top: 10px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .checkbox-label {
+    width: 48%;
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .see-icon, .unsee-icon {
+    top: 44px;
+    font-size: 16px;
+  }
 }
