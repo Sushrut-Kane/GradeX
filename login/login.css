@@ -197,3 +197,19 @@ input:not([type="radio"]):focus {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+/* sushrut */
+body{
+  font-size: 20px;
+}
+
+/* sushrut */
+.see-icon, 
+.unsee-icon {
+  position: absolute;
+  top: 60px; /* Adjust this based on the input field's height */
+  right: 20px; /* Adjust this based on the desired position */
+  font-size: 20px; /* Icon size */
+  cursor: pointer; /* Indicates that the icon is clickable */
+  color: #000000; /* Optional: You can change the color */
+  transition: color 0.2s ease-in-out; /* Smooth transition effect */
+}
